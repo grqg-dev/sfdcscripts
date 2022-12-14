@@ -58,8 +58,13 @@ git checkout -b $branchToMake
 #reset to remote
 git reset --hard $resetFrom
 
-#add commits
-git cherry-pick $baseCommit..$branchName
+#only add commits to non-release branch
+if [ "$1" = "release" ]; then
+    echo nothing to do
+else    
+    #add commits
+    git cherry-pick $baseCommit..$branchName
+fi
 
 # Print the prompt message
 read -n 1 -r -p "Do you want to push to remote? [y/n] " response
@@ -81,3 +86,6 @@ n)
     exit 1
     ;;
 esac
+
+#checkout where we started
+git checkout $branchName
