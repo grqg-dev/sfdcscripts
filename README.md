@@ -14,7 +14,7 @@ make-mr
 
 ## About
 
-Hi, my name is Matt Dennis and I'm the creator of this repository. I stumbled upon my powers as a Salesforce wizard one day while trying to fix a particularly stubborn bug in my code. Despite all my efforts, the bug just wouldn't go away. But then, out of nowhere, I had a sudden epiphany and the solution came to me like a bolt of lightning. From that moment on, I knew I had a special connection to the Salesforce universe and I've been using my powers to conjure up all sorts of useful scripts and tools for my fellow Salesforce enthusiasts.
+Hi, my name is Matt Dennis and I'm the creator of this repository. One day, while I was struggling with a particularly pesky bug in my code, I accidentally stumbled upon a hidden portal to the Salesforce dimension. As I stepped through the portal, I was imbued with all sorts of magical powers, including the ability to conjure up the most useful scripts and tools you've ever seen. And that's how I became a Salesforce wizard, folks! I've been using my powers to help my fellow Salesforce enthusiasts ever since, and I have to say, it's been a pretty wild ride.
 
 In my spare time, I enjoy reading ancient scrolls about the art of data manipulation and practicing my levitation skills. I also like to keep up with the latest Salesforce news and attend industry events, where I've had the opportunity to meet Marc in person and learn from his wisdom and experience.
 
