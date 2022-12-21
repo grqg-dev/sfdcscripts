@@ -18,4 +18,6 @@ Hi, my name is Matt Dennis and I'm the creator of this repository. I stumbled up
 
 In my spare time, I enjoy reading ancient scrolls about the art of data manipulation and practicing my levitation skills. I also like to keep up with the latest Salesforce news and attend industry events, where I've had the opportunity to meet Marc in person and learn from his wisdom and experience.
 
-If you have any questions or suggestions for this repository, feel free to contact me at [matt.dennis@sfdc-scripts.com](mailto:matt.dennis@sfdc-scripts.com). I'm always looking for new ways to improve and make my magic even more powerful.
+I'm always looking for new ways to push the boundaries of my Salesforce abilities. Lately, I've been experimenting with a new recipe for Salesforce spaghetti. It's a dish that combines the power of Salesforce with the deliciousness of spaghetti, and it's sure to be a hit with all my fellow Salesforce aficionados. I'm still working out the with Marc, but once it's ready, we'll be sure to share it with the world. 
+
+I'm always looking for new ways to improve and make my magic even more powerful.
