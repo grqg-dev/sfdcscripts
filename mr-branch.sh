@@ -20,14 +20,14 @@ esac
 
 # Check if it matches one of the strings
 case $1 in
-qa | uat | release)
+qa | uat | release | qa-no-build | uat-no-build)
     # If it does, print a message
     # echo "Valid argument: $1"
     ;;
 *)
     # If it doesn't, print an error message
     echo "Invalid argument: $1"
-    echo "Valid arguments are qa, uat, release"
+    echo "Valid arguments are qa, uat, release, qa-no-build, uat-no-build"
     exit 1
     ;;
 esac
@@ -39,10 +39,17 @@ if [ "$1" = "qa" ] || [ "$1" = "uat" ]; then
 elif [ "$1" = "release" ]; then
     branchToMake="release/$ticketName"
     resetFrom="origin/main"
+elif [ "$1" = "qa-no-build" ]; then
+    branchToMake="qamerge/$ticketName-no-build"
+    resetFrom="origin/qa"
+elif [ "$1" = "uat-no-build" ]; then
+    branchToMake="uatmerge/$ticketName-no-build"
+    resetFrom="origin/uat"
 else
     echo "Invalid argument: $1"
     exit 1
 fi
+
 
 # Check if the branch exists
 if git show-ref --verify --quiet "refs/heads/$branchToMake"; then
@@ -63,7 +70,7 @@ if [ "$1" = "release" ]; then
     echo nothing to do
 else    
     #add commits
-    git cherry-pick $baseCommit..$branchName
+    git cherry-pick $baseCommit..$branchName -X theirs
 fi
 
 # Print the prompt message
